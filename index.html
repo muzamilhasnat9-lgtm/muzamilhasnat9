@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover free English and Urdu graphic design resources, business posters, social media templates, invitations, and print designs on DesignFreeHub.">
+  <meta name="theme-color" content="#f8fafc">
+  <meta property="og:title" content="DesignFreeHub — Free Graphic Design Resources">
+  <meta property="og:description" content="Free English and Urdu design resources for creators, businesses, and print shops.">
+  <meta property="og:type" content="website">
+  <title>DesignFreeHub — Free Graphic Design Resources</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="DesignFreeHub home">
+        <span class="brand-mark">DF</span><span>DesignFree<span class="brand-accent">Hub</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <a href="#resources">Explore designs</a>
+        <a href="#categories">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">FREE GRAPHIC DESIGN RESOURCES</p>
+          <h1>Good design starts <span>right here.</span></h1>
+          <p class="hero-description">Explore practical English and Urdu design resources for creators, small businesses, students, and print shops.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#resources">Explore resources <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#categories">Browse categories</a>
+          </div>
+          <div class="hero-note"><span class="status-dot"></span> Free resources · English + اردو</div>
+        </div>
+        <div class="hero-art" aria-label="Decorative design preview">
+          <div class="art-card art-card-back"><span class="art-label">YOUR NEXT IDEA</span><div class="art-lines"></div><div class="art-circle"></div></div>
+          <div class="art-card art-card-front"><span class="art-pill">DESIGN / 001</span><div class="art-big-type">MAKE<br><em>IT</em><br>MATTER.</div><div class="art-bottom"><span>DesignFreeHub</span><span>✳</span></div></div>
+          <div class="art-spark">✳</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-items">
+        <span>✦ Easy to browse</span><span>✦ English & Urdu</span><span>✦ For digital & print</span><span>✦ New resources coming</span>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">FIND YOUR STYLE</p><h2>Browse categories</h2></div>
+          <p>Start with a category and find the resource that fits your next project.</p>
+        </div>
+        <div class="category-grid" id="categoryGrid">
+          <button class="category-card" data-category="urdu" type="button"><span class="category-icon icon-urdu">ا ب</span><span class="category-title">Urdu Designs</span><span class="category-subtitle">Posters, greetings & notices</span><span class="category-arrow">↗</span></button>
+          <button class="category-card" data-category="social" type="button"><span class="category-icon icon-social">▧</span><span class="category-title">Social Media</span><span class="category-subtitle">Posts, stories & thumbnails</span><span class="category-arrow">↗</span></button>
+          <button class="category-card" data-category="business" type="button"><span class="category-icon icon-business">▤</span><span class="category-title">Business & Print</span><span class="category-subtitle">Flyers, cards & menus</span><span class="category-arrow">↗</span></button>
+          <button class="category-card" data-category="events" type="button"><span class="category-icon icon-events">✳</span><span class="category-title">Events & Invitations</span><span class="category-subtitle">Celebrations and occasions</span><span class="category-arrow">↗</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="resources">
+      <div class="container">
+        <div class="section-heading resources-heading">
+          <div><p class="eyebrow">THE RESOURCE LIBRARY</p><h2>Explore free resources</h2><p class="section-intro">Browse the starter collection. Sample items are clearly marked and use original preview artwork.</p></div>
+          <span class="resource-count" id="resourceCount">Loading resources…</span>
+        </div>
+        <div class="toolbar">
+          <label class="search-box"><span class="sr-only">Search resources</span><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search posters, templates, Urdu…" autocomplete="off"></label>
+          <label class="select-wrap"><span class="sr-only">Filter by category</span><select id="categoryFilter"><option value="all">All categories</option><option value="urdu">Urdu Designs</option><option value="social">Social Media</option><option value="business">Business & Print</option><option value="events">Events & Invitations</option></select></label>
+          <label class="select-wrap"><span class="sr-only">Sort resources</span><select id="sortSelect"><option value="featured">Featured first</option><option value="az">Name A–Z</option></select></label>
+        </div>
+        <div class="resource-grid" id="resourceGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No resources found</h3><p>Try another search term or choose a different category.</p><button class="button button-secondary" id="clearFilters" type="button">Clear filters</button></div>
+        <div class="library-note"><strong>Building the library:</strong> This starter version contains sample entries. Replace them with your own original designs and real downloadable files before promoting the site or applying for advertising.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container promo-panel">
+        <div><p class="eyebrow">MADE FOR EVERYDAY CREATIVITY</p><h2>Design something useful today.</h2><p>From a shop poster to a social post, keep your next project moving with resources made for real work.</p></div>
+        <a class="button button-light" href="#resources">Find a resource <span aria-hidden="true">→</span></a>
+        <div class="promo-shape" aria-hidden="true">✳</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="brand brand-footer" href="index.html"><span class="brand-mark">DF</span><span>DesignFree<span class="brand-accent">Hub</span></span></a>
+      <p>Useful design resources for creative people everywhere.</p>
+      <nav class="footer-links" aria-label="Footer navigation"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms & License</a></nav>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> DesignFreeHub</span><span>Built for creativity. Please check each resource's license.</span></div>
+  </footer>
+  <script src="assets/js/resources.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
